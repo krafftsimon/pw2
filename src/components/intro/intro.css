@@ -1,0 +1,172 @@
+#intro {
+  width: 100%;
+  height: 800px;
+  position: relative;
+}
+
+#intro-welcome {
+  position: absolute;
+  z-index: 1;
+  background: var(--main-color);
+  width: 100%;
+  transform: skewY(-12deg);
+  transform-origin: 0;
+  height: 161%;
+}
+
+#intro-background {
+  width: 150%;
+  height: 100%;
+  background: linear-gradient(-45deg, var(--purple-color) 40%, var(--blue-color));
+  position: absolute;
+  left: -25%;
+  overflow: hidden;
+  border-bottom-left-radius:50%;
+  border-bottom-right-radius:50%;
+}
+
+#stripe1 {
+  width: 400px;
+  height: 50%;
+  background: var(--purple-color);
+  border-radius: 50px;
+  position: absolute;
+  top: -10%;
+  left: 15%;
+}
+
+#stripe2 {
+  width: 400px;
+  height: 50%;
+  background: #4d14fc;
+  border-radius: 50px;
+  position: absolute;
+  top: 70%;
+  right: 15%;
+}
+
+#profile {
+  color: white;
+  margin: 170px 0 0 0;
+}
+
+#profile h1 {
+  font-size: 60px;
+  font-weight: 400;
+  margin: 20px 0;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+#profile h3 {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 20px 0;
+  color: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+#test {
+  height: 10px;
+}
+
+#intro-container {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+  padding: 1px 15px;
+}
+
+#intro-container header {
+  display: flex;
+  align-items: center;
+}
+
+.header-btn {
+  margin: 10px 10px;
+  color: white;
+  font-size: 18px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  padding: 10px 20px;
+  transition: 0.4s background-color;
+  border-radius: 5px;
+  cursor: pointer;
+  transform: translateY(-30px);
+  opacity: 0;
+  text-decoration: none;
+}
+
+.header-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#header-flex-space {
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+#logo {
+  font-size: 40px;
+  color: white;
+}
+
+#welcome {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.welcome-piece {
+  width: 25%;
+  height: 33.4%;
+  background-color: var(--grey-color);
+}
+
+.intro-button {
+  border: none;
+  padding: 10px 40px;
+  border-radius: 5px;
+  background-color: var(--green-color);
+  box-shadow: 4px 4px 15px -1px rgba(0, 0, 0, 0.5);
+  margin-right: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s box-shadow;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.intro-button:hover {
+  box-shadow: 5px 5px 25px 1px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 875px) {
+  #intro-background {
+    width: 200%;
+    left: -50%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #intro-background {
+    width: 300%;
+    left: -100%;
+  }
+
+  .intro-button {
+    padding: 10px 25px;
+  }
+
+  #intro-btn2 {
+    margin-right: 0;
+  }
+}

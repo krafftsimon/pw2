@@ -1,0 +1,14 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: white;
+  --grey-color: #ededed;
+  --blue-color: #3f00fc; /*#2200ff #3f00fc #521eff*/
+  --purple-color: #7f00ff;
+  --green-color: #5cb231;
+  --red-color: #db347c;
+  font-family: 'Cabin', sans-serif;
+  overflow-x: hidden;
+  letter-spacing: 0.5px;
+}
