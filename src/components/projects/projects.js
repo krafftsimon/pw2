@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { TimelineLite } from "gsap";
 import VisibilitySensor from "react-visibility-sensor";
+import { isMobileOnly } from 'react-device-detect';
 import './projects.css';
 
 class Projects extends Component {
@@ -16,7 +17,7 @@ class Projects extends Component {
   }
 
   showSkills(visible) {
-    if (visible) {
+    if (visible && !isMobileOnly) {
       let t1 = new TimelineLite();
       t1.staggerTo(['#vote', '#gt', '#pong', '#fractal', '#bomberman', '#proc', '#rfid'], 2 , {opacity: 1, height: 600, ease: "Expo.easeOut"}, 0.5);
       this.setState({

@@ -78,6 +78,13 @@
   }
 }
 
+@media only screen and (max-width: 812px) {
+  .primary-box {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .primary-box {
     width: 90%;

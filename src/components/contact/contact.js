@@ -13,6 +13,7 @@ class Contact extends Component {
   render() {
     return (
       <section id="contact">
+        <div id="contact-background"></div>
         <div id="contact-container">
           <h1> Contact Information </h1>
           <div id="contact-box">
