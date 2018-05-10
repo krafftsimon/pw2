@@ -28,7 +28,7 @@ class Intro extends Component {
     document.addEventListener('click', (e) => this.closeMenuEventListener(e));
     document.addEventListener('touchend', (e) => this.closeMenuEventListener(e));
   }
-  
+
   openMobileMenu() {
     TweenLite.to("#mobile-menu", 0.3, {opacity: 1, width:"200px", height:"300px"});
     setTimeout(() => {
@@ -37,7 +37,7 @@ class Intro extends Component {
       });
     }, 10);
   }
-  
+
   closeMobileMenu() {
     this.setState({
     mobileMenuOpen: false
@@ -56,7 +56,7 @@ class Intro extends Component {
       }
     }
   }
-  
+
   render() {
     return (
       <section id="intro">
