@@ -35,8 +35,7 @@
 }
 
 .project-div:hover {
-  transform: translateY(-5px);
-  box-shadow: 1px 4px 60px 1px rgba(0,0,0, 0.5);
+  box-shadow: 1px 4px 70px 2px rgba(0,0,0, 0.5);
 }
 
 .project-placeholder {
@@ -134,5 +133,25 @@
   .project-div {
     height: 600px;
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .project-pic {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+  .project-desc {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .project-div {
+    border-radius: 0;
+  }
+
+  .project-placeholder {
+    margin: 80px;
   }
 }

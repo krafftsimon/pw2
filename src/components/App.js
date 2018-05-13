@@ -4,6 +4,7 @@ import Primary from './primary/primary';
 import Skills from './skills/skills';
 import Projects from './projects/projects';
 import Contact from './contact/contact';
+import Timeline from './timeline/timeline';
 import './App.css';
 
 class App extends Component {

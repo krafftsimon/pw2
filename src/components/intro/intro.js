@@ -21,9 +21,20 @@ class Intro extends Component {
   componentDidMount() {
     let t1 = new TimelineLite();
     let t2 = new TimelineLite();
+    let t3 = new TimelineLite();
     setTimeout(() => {
       t1.staggerTo(["#profile-name", "#profile-subtitle", "#intro-btn1", "#intro-btn2"], 0.5, {y:0, opacity: 1}, 0.2);
       t2.staggerTo(["#header-btn1", "#header-btn2", "#header-btn3"], 0.5, {y:0, opacity: 1}, 0.2);
+      t3.staggerTo([
+        "#code-line-1", 
+        "#code-line-2", 
+        "#code-line-3",
+        "#code-line-4",
+        "#code-line-5",
+        "#code-line-6",
+        "#code-line-7",
+        "#code-line-8"
+      ], 0.6, {width: 150}, 0.4);
     }, 500);
     document.addEventListener('click', (e) => this.closeMenuEventListener(e));
     document.addEventListener('touchend', (e) => this.closeMenuEventListener(e));
@@ -65,7 +76,18 @@ class Intro extends Component {
           <div id="stripe1"></div>
           <div id="stripe2"></div>
         </div>
+        
         <div id="intro-container">
+          <div id="comp-illustration">
+            <div id="code-line-1"></div>
+            <div id="code-line-2"></div>
+            <div id="code-line-3"></div>
+            <div id="code-line-4"></div>
+            <div id="code-line-5"></div>
+            <div id="code-line-6"></div>
+            <div id="code-line-7"></div>
+            <div id="code-line-8"></div>
+          </div>
           <div id="mobile-menu-open" onClick={() => this.openMobileMenu()}> <GoThreeBars size={40} /> </div>
           <div id="mobile-menu">
             <div id="mobile-menu-close" onClick={() => this.closeMobileMenu()}> <GoX size={40} /> </div>
@@ -86,8 +108,8 @@ class Intro extends Component {
           <div id="profile">
             <h1 id="profile-name"> Simon Krafft </h1>
             <h3 id="profile-subtitle"> Web-Developer / Software Engineer </h3>
-            <button className="intro-button" id="intro-btn1" onClick={() => TweenLite.to(window, 1, {scrollTo:"#projects"})}> Projects <FaArrowRight size={24} /> </button>
-            <button className="intro-button" id="intro-btn2" onClick={() => TweenLite.to(window, 1, {scrollTo:"#contact"})}> Contact <FaArrowRight size={24} /> </button>
+            <button className="intro-button" id="intro-btn1" onClick={() => TweenLite.to(window, 1, {scrollTo:"#projects"})}> PROJECTS <FaArrowRight size={24} style={{marginLeft: 8}} /> </button>
+            <button className="intro-button" id="intro-btn2" onClick={() => TweenLite.to(window, 1, {scrollTo:"#contact"})}> CONTACT <FaArrowRight size={24} style={{marginLeft: 8}} /> </button>
           </div>
         </div>
       </section>

@@ -12,6 +12,29 @@
   background: linear-gradient(45deg, var(--blue-color), var(--purple-color));
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
+  overflow: hidden;
+}
+
+#contact-stripe1 {
+  position: absolute;
+  width: 600px;
+  height: 200px;
+  background: linear-gradient(#4700fc, #5600fc 100%);
+  top: -80px;
+  right: 55%;
+  border-radius: 50px;
+  transform: rotate(135deg);
+}
+
+#contact-stripe2 {
+  position: absolute;
+  width: 600px;
+  height: 200px;
+  background: linear-gradient(var(--purple-color), #6500fc);
+  top: 300px;
+  right: 20%;
+  border-radius: 50px;
+  transform: rotate(45deg);
 }
 
 #contact-container {
