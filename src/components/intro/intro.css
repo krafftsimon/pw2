@@ -233,19 +233,19 @@
   width: 500px;
   height: 500px;
   right: -5%;
-  background-image: url('../../assets/comp3.png');
+  background-image: url('../../assets/comp.png');
   background-position: center center;
-  background-size: 140%;
+  background-size: 126%;
 }
 
 #code-line-1 {
   height: 15px;
   background-color: #679bef;
   position: absolute;
-  top: 70px;
-  left: 41%;
+  top: 72px;
+  left: 43%;
   border-radius: 2px;
-  transform: rotate(13deg);
+  transform: rotate(14deg);
   transform-origin: 0%;
 }
 
@@ -253,10 +253,10 @@
   height: 15px;
   background-color: #88e56b;
   position: absolute;
-  top: 95px;
-  left: 43%;
+  top: 98px;
+  left: 46%;
   border-radius: 2px;
-  transform: rotate(13deg);
+  transform: rotate(14deg);
   transform-origin: 0%;
 }
 
@@ -264,10 +264,10 @@
   height: 15px;
   background-color: #dbae59;
   position: absolute;
-  top: 123px;
-  left: 47%;
+  top: 125px;
+  left: 49%;
   border-radius: 2px;
-  transform: rotate(13deg);
+  transform: rotate(14deg);
   transform-origin: 0%;
 }
 
@@ -275,10 +275,10 @@
   height: 15px;
   background-color: #dbae59;
   position: absolute;
-  top: 147px;
-  left: 46%;
+  top: 148px;
+  left: 48%;
   border-radius: 2px;
-  transform: rotate(13deg);
+  transform: rotate(14deg);
   transform-origin: 0%;
 }
 
@@ -287,9 +287,9 @@
   background-color: #dbae59;
   position: absolute;
   top: 171px;
-  left: 45%;
+  left: 47%;
   border-radius: 2px;
-  transform: rotate(13deg);
+  transform: rotate(14deg);
   transform-origin: 0%;
 }
 
@@ -298,9 +298,9 @@
   background-color: #679bef;
   position: absolute;
   top: 190px;
-  left: 35%;
+  left: 37%;
   border-radius: 2px;
-  transform: rotate(13.5deg);
+  transform: rotate(14.5deg);
   transform-origin: 0%;
 }
 
@@ -309,9 +309,9 @@
   background-color: #88e56b;
   position: absolute;
   top: 217px;
-  left: 38%;
+  left: 40%;
   border-radius: 2px;
-  transform: rotate(13.5deg);
+  transform: rotate(14.5deg);
   transform-origin: 0%;
 }
 
@@ -320,9 +320,9 @@
   background-color: #dbae59;
   position: absolute;
   top: 243px;
-  left: 40%;
+  left: 43%;
   border-radius: 2px;
-  transform: rotate(14deg);
+  transform: rotate(15deg);
   transform-origin: 0%;
 }
 

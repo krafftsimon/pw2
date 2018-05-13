@@ -75,8 +75,7 @@ class Intro extends Component {
         <div id="intro-background">
           <div id="stripe1"></div>
           <div id="stripe2"></div>
-        </div>
-        
+        </div> 
         <div id="intro-container">
           <div id="comp-illustration">
             <div id="code-line-1"></div>
