@@ -34,14 +34,14 @@ class Primary extends Component {
 
         <div id="primary-container">
           <div className="primary-box" id="box1">
-            <img src={require('../../assets/icon3.png')} />
+            <img src={require('../../assets/icon3.png')} alt="computer icon" />
             <h1> Computer Engineering </h1>
             <p> At McGill Univerity, I have learned a wide variety of topics ranging from microelectronics to operating systems.
                 I worked on many different projects including a File System, a Pipelined processor, an AM receiver,
                 a humidity-sensing RFID, etc...</p>
           </div>
           <div className="primary-box" id="box2">
-            <img src={require('../../assets/icon2.png')} />
+            <img src={require('../../assets/icon2.png')} alt="web development icon" />
             <h1> Web Development </h1>
             <p> I love designing websites using Moderm Front-End libraries like React and Angular.
                 Most of the web apps I have created use Node.js on the Back-End, and are hosted on
@@ -49,7 +49,7 @@ class Primary extends Component {
                 more familiar with the Google Cloud features.</p>
           </div>
           <div className="primary-box" id="box3">
-            <img src={require('../../assets/icon1.png')} />
+            <img src={require('../../assets/icon1.png')} alt="engineering icon" />
             <h1> Software Engineering </h1>
             <p> My passion for problem solving, and computers, combined with desire to create things has naturally led
             me to programming. I attach a lot of importance to clean, organized, and

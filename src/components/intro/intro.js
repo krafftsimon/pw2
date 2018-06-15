@@ -91,9 +91,18 @@ class Intro extends Component {
           <div id="mobile-menu">
             <div id="mobile-menu-close" onClick={() => this.closeMobileMenu()}> <GoX size={40} /> </div>
             <div id="mobile-menu-spacer"></div>
-            <a className="mobile-menu-btn" target="_blank" href="https://www.github.com/krafftsimon"><img className="mobile-menu-icon" src={require('../../assets/github-icon.png')} /><span className="mobile-menu-text">Github</span></a>
-            <a className="mobile-menu-btn" target="_blank" href="https://www.linkedin.com/in/krafftsimon"><img className="mobile-menu-icon" src={require('../../assets/linkedin-icon.png')} /><span className="mobile-menu-text">Linkedin</span></a>
-            <a className="mobile-menu-btn" target="_blank" href="../assets/RESUME.pdf"> <GoFileText id="mobile-menu-icon-3" size={32} color='black' /> <span className="mobile-menu-text">Resume</span></a>
+            <a className="mobile-menu-btn" target="_blank" href="https://www.github.com/krafftsimon">
+              <img className="mobile-menu-icon" src={require('../../assets/github-icon.png')} alt="github logo" />
+              <span className="mobile-menu-text">Github</span>
+            </a>
+            <a className="mobile-menu-btn" target="_blank" href="https://www.linkedin.com/in/krafftsimon">
+              <img className="mobile-menu-icon" src={require('../../assets/linkedin-icon.png')} alt="linkedin logo"/>
+              <span className="mobile-menu-text">Linkedin</span>
+            </a>
+            <a className="mobile-menu-btn" target="_blank" href="../assets/RESUME.pdf">
+              <GoFileText id="mobile-menu-icon-3" size={32} color='black' />
+              <span className="mobile-menu-text">Resume</span>
+            </a>
           </div>
           <header>
             <div id="logo">SK</div>
