@@ -1,101 +1,10 @@
 import React, { Component } from 'react';
-import { TimelineLite } from "gsap";
-import VisibilitySensor from "react-visibility-sensor";
+import { TimelineLite } from 'gsap';
+import VisibilitySensor from 'react-visibility-sensor';
+
+import { techList, programmingLangList } from './skill-list';
 import './skills.css';
 
-const pLanguages = [
-  {
-    name:"HTML",
-    star:"★★★",
-    emptyStar:"☆",
-  },
-  {
-    name:"CSS",
-    star:"★★★",
-    emptyStar:"☆",
-  },
-  {
-    name:"JavaScript",
-    star:"★★★",
-    emptyStar:"☆",
-  },
-  {
-    name:"TypeScript",
-    star:"★★",
-    emptyStar:"☆☆",
-  },
-  {
-    name:"Python",
-    star:"★★",
-    emptyStar:"☆☆",
-  },
-  {
-    name:"C++",
-    star:"★★",
-    emptyStar:"☆☆",
-  },
-  {
-    name:"Java",
-    star:"★★",
-    emptyStar:"☆☆",
-  },
-  {
-    name:"VHDL",
-    star:"★★",
-    emptyStar:"☆☆",
-  },
-  {
-    name:"ARM Assembly",
-    star:"★★",
-    emptyStar:"☆☆",
-  },
-]
-
-const technologies = [
-  {
-    name:"Angular 2+",
-    star:"★★★",
-    emptyStar:"☆",
-  },
-  {
-    name:"React",
-    star:"★★★",
-    emptyStar:"☆",
-  },
-  {
-    name:"Redux",
-    star:"★★",
-    emptyStar:"☆☆",
-  },
-  {
-    name:"Node.js",
-    star:"★★★",
-    emptyStar:"☆",
-  },
-  {
-    name:"Express.js",
-    star:"★★★",
-    emptyStar:"☆",
-  },
-  {
-    name:"Socket.io",
-    star:"★★",
-    emptyStar:"☆☆",
-  },
-]
-
-const languages = [
-  {
-    name:"English",
-    star:"★★★★",
-    emptyStar:"",
-  },
-  {
-    name:"French",
-    star:"★★★★",
-    emptyStar:"",
-  }
-]
 
 class Skills extends Component {
 
@@ -104,9 +13,6 @@ class Skills extends Component {
     this.state = {
       visiSensorActive: true
     }
-  }
-
-  componentDidMount() {
   }
 
   showSkills(visible) {
@@ -128,51 +34,29 @@ class Skills extends Component {
           <VisibilitySensor active={this.state.visiSensorActive} offset={{bottom:200}} onChange={e => this.showSkills(e)} />
           <h2> Technologies: </h2>
           <div className="skills-list">
-            {technologies.map(skill => {
+            {techList.map(tech => {
               return (
-                <div className="skill-box">
-                  <span> {skill.name} </span>
-                  <span className="star-rating">
-                    {skill.star}
-                    <span className="empty-star">
-                      {skill.emptyStar}
-                    </span>
-                  </span>
+                <div className="skill-item">
+                  <img className="skill-item-img" src={require('../../assets/' + tech.imgUrl)} alt={tech.imgUrl} />
+                  <h3 className="skill-item-name">{tech.name}</h3>
                 </div>
               );
             })}
           </div>
           <h2> Programming Languages: </h2>
           <div className="skills-list">
-            {pLanguages.map(skill => {
+            {programmingLangList.map(tech => {
               return (
-                <div className="skill-box">
-                  <span> {skill.name} </span>
-                  <span className="star-rating">
-                    {skill.star}
-                    <span className="empty-star">
-                      {skill.emptyStar}
-                    </span>
-                  </span>
+                <div className="skill-item">
+                  <img className="skill-item-img" src={require('../../assets/' + tech.imgUrl)} alt={tech.imgUrl} />
+                  <h3 className="skill-item-name">{tech.name}</h3>
                 </div>
               );
             })}
           </div>
           <h2> Languages: </h2>
           <div className="skills-list">
-            {languages.map(skill => {
-              return (
-                <div className="skill-box">
-                  <span> {skill.name} </span>
-                  <span className="star-rating">
-                    {skill.star}
-                    <span className="empty-star">
-                      {skill.emptyStar}
-                    </span>
-                  </span>
-                </div>
-              );
-            })}
+            
           </div>
         </div>
       </section>
