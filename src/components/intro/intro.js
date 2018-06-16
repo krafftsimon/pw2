@@ -116,8 +116,8 @@ class Intro extends Component {
           <div id="profile">
             <h1 id="profile-name"> Simon Krafft </h1>
             <h3 id="profile-subtitle"> Web-Developer / Software Engineer </h3>
-            <button className="intro-button" id="intro-btn1" onClick={() => TweenLite.to(window, 1, {scrollTo:"#projects"})}> PROJECTS <FaArrowRight size={24} style={{marginLeft: 8}} /> </button>
-            <button className="intro-button" id="intro-btn2" onClick={() => TweenLite.to(window, 1, {scrollTo:"#contact"})}> CONTACT <FaArrowRight size={24} style={{marginLeft: 8}} /> </button>
+            <button className="intro-button" id="intro-btn1" onClick={() => TweenLite.to(window, 1, {scrollTo:"#projects"})}> Projects <FaArrowRight size={24} style={{marginLeft: 8}} /> </button>
+            <button className="intro-button" id="intro-btn2" onClick={() => TweenLite.to(window, 1, {scrollTo:"#contact"})}> Contact <FaArrowRight size={24} style={{marginLeft: 8}} /> </button>
           </div>
         </div>
       </section>

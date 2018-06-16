@@ -36,27 +36,23 @@ class Skills extends Component {
           <div className="skills-list">
             {techList.map(tech => {
               return (
-                <div className="skill-item">
+                <a className="skill-item" target="_blank" href={tech.url}>
                   <img className="skill-item-img" src={require('../../assets/' + tech.imgUrl)} alt={tech.imgUrl} />
                   <h3 className="skill-item-name">{tech.name}</h3>
-                </div>
+                </a>
               );
             })}
           </div>
           <h2> Programming Languages: </h2>
           <div className="skills-list">
-            {programmingLangList.map(tech => {
+            {programmingLangList.map(pLang => {
               return (
-                <div className="skill-item">
-                  <img className="skill-item-img" src={require('../../assets/' + tech.imgUrl)} alt={tech.imgUrl} />
-                  <h3 className="skill-item-name">{tech.name}</h3>
-                </div>
+                <a className="skill-item" target="_blank" href={pLang.url}>
+                  <img className="skill-item-img" src={require('../../assets/' + pLang.imgUrl)} alt={pLang.imgUrl} />
+                  <h3 className="skill-item-name">{pLang.name}</h3>
+                </a>
               );
             })}
-          </div>
-          <h2> Languages: </h2>
-          <div className="skills-list">
-            
           </div>
         </div>
       </section>

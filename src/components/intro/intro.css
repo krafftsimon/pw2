@@ -131,19 +131,21 @@
 
 .intro-button {
   border: none;
-  padding: 10px 40px;
+  padding: 10px 20px;
   border-radius: 5px;
   background-color: var(--green-color);
-  box-shadow: 4px 4px 15px -1px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 25px -5px rgba(0, 0, 0, 1);
   margin: 20px 20px 0 0;
-  font-size: 20px;
+  font-size: 18px;
   color: white;
   cursor: pointer;
-  transition: 0.4s box-shadow;
+  transition: 0.2s box-shadow;
   opacity: 0;
   transform: translateY(30px);
   display: inline-flex;
   align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 #intro-btn2 {
@@ -151,7 +153,12 @@
 }
 
 .intro-button:hover {
-  box-shadow: 5px 5px 45px -3px rgba(0, 0, 0, 0.7);
+  box-shadow: 6px 6px 35px -5px rgba(0, 0, 0, 1);
+}
+
+.intro-button:active {
+  outline: none;
+  box-shadow: none;
 }
 
 #mobile-menu-open {
